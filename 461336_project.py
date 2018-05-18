@@ -16,9 +16,9 @@ from multiprocessing import Pool
 
 parser=argparse.ArgumentParser(description='')
 parser.add_argument('directory',type=str,help='directory of GDELT file')
-parser.add_argument('latitude',type=int,help='latitude of a location')
-parser.add_argument('longitude',type=int,help='longitute of a location')
-parser.add_argument('distance',type=int,help='distance for the locations with')
+parser.add_argument('latitude',type=float,help='latitude of a location')
+parser.add_argument('longitude',type=float,help='longitute of a location')
+parser.add_argument('distance',type=float,help='distance for the locations with')
 parser.add_argument('number_proc',type=int,help='number of process to do the computation')
 args=parser.parse_args()
 path=args.directory
